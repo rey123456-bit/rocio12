@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charque CAMELs - GAPROIN | Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-section">
+                <img src="img/logo/logo_1.jpg" alt="Logo Charque CAMELs" class="logo">
+                <span class="brand-name">GAPROIN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#productos" class="nav-link">Productos</a></li>
+                <li><a href="#elaboracion" class="nav-link">Elaboración</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#registro" class="nav-link">Registrarse</a></li>
+                <li><a href="#carrito" class="nav-link carrito-link">🛒 Carrito</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="page inicio-page">
+        <div class="inicio-content">
+            <div class="inicio-hero">
+                <h1 class="titulo-principal">CAMELs - GAPROIN</h1>
+                <p class="subtitulo">Tradición Andina - Calidad Excepcional</p>
+                <p class="descripcion">Descubre el auténtico sabor del charque artesanal de la asociación GAPROIN.
+                    Elaborado con técnicas ancestrales y los mejores ingredientes.</p>
+                <div class="cta-buttons">
+                    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                    <a href="#elaboracion" class="btn btn-secondary">Conocer Proceso</a>
+                </div>
+            </div>
+            <div class="inicio-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🏔️</div>
+                    <h3>Tradición Andina</h3>
+                    <p>Recetas ancestrales transmitidas por generaciones</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Calidad</h3>
+                    <p>Ingredientes seleccionados y proceso artesanal</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>100% Natural</h3>
+                    <p>Sin conservantes ni aditivos artificiales</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Apoyo Comunitario</h3>
+                    <p>ASOCIACIÓN GAPROIN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRODUCTOS -->
+    <section id="productos" class="page productos-page">
+        <h2 class="seccion-titulo">Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="img/productos/charque_2.jpg" alt="Charque CAMELs">
+                </div>
+                <div class="producto-info">
+                    <h3>Charque CAMELs</h3>
+                    <p class="producto-descripcion">Charque de alta calidad en empaque de lujo con presentación
+                        elegante.</p>
+                    <div class="producto-detalles">
+                        <span class="precio">Bs 140</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Charque CAMELs', 140)" img
+                            src="img/productos/charque_1.jpg">Agregar al
+                            Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="img/productos/granel.jpg" alt="Charque GRANEL">
+                </div>
+                <div class="producto-info">
+                    <h3>Charque GRANEL</h3>
+                    <p class="producto-descripcion">Charque secado al aire de forma tradicional.
+                        Ideal para disfrutar con familia y amigos.</p>
+                    <div class="producto-detalles">
+                        <span class="precio">Bs 120</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Charque GRANEL', 120)" img
+                            src="img/productos/granel.jpg">Agregar al
+                            Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="img/productos/picado.jpg" alt="Charque en trozos">
+                </div>
+                <div class="producto-info">
+                    <h3>Charque en trozos</h3>
+                    <p class="producto-descripcion">Charque en trozos listo para ser cocido y picado.</p>
+                    <div class="producto-detalles">
+                        <span class="precio">Bs 90</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Charque en trozos', 90)" img
+                            src="img/productos/picado.jpg">Agregar al
+                            Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="img/productos/chicharrón.jpg" alt="Chicharrón">
+                </div>
+                <div class="producto-info">
+                    <h3>Chicharrón</h3>
+                    <p class="producto-descripcion">Charque en trozos generosos acompañado con el mote, chuño y la papa.
+                        Ideal para disfrutar con familia y amigos.</p>
+                    <div class="producto-detalles">
+                        <span class="precio">Bs 30</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Chicharrón', 30)" img
+                            src="img/productos/chicharrón.jpg">Agregar al
+                            Carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="img/productos/charkekan.jpg" alt="Charkekan">
+                </div>
+                <div class="producto-info">
+                    <h3>Charkekan</h3>
+                    <p class="producto-descripcion">Un plato de máxima calidad y sabor concentrado.</p>
+                    <div class="producto-detalles">
+                        <span class="precio">Bs 30</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Charkekan', 30)" img
+                            src="img/productos/charkekan.jpg">Agregar al
+                            Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ELABORACIÓN -->
+    <section id="elaboracion" class="page elaboracion-page">
+        <h2 class="seccion-titulo">Proceso de Elaboración</h2>
+        <p class="seccion-descripcion">Descubre cómo elaboramos nuestro charque.</p>
+
+        <div class="elaboracion-timeline">
+            <div class="timeline-item">
+                <div class="timeline-number">1</div>
+                <div class="timeline-content">
+                    <h3>Selección y Corte de Carne</h3>
+                    <img src="img/elaboracion/elaboración_0.jpg" alt="Paso 1: Selección">
+                    <p>Seleccionamos la mejor carne de camélidos. Se corta en tiras finas y uniformes para asegurar un
+                        secado homogéneo.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">2</div>
+                <div class="timeline-content">
+                    <h3>Deshidratación en carpa solar</h3>
+                    <img src="img/elaboracion/elaboración_1.jpg" alt="Paso 2: Deshidratación en carpa solar">
+                    <p>El charque se extiende en la cámara solar, aprovechando para secar naturalmente bajo el sol.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">3</div>
+                <div class="timeline-content">
+                    <h3>Machucado ancestral</h3>
+                    <img src="img/elaboracion/elaboración_3.jpg" alt="Paso 3: Machucado ancestral">
+                    <p>El charque se machuca de manera ancestral asegurando la textura y la calidad de nuestro
+                        producto.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">4</div>
+                <div class="timeline-content">
+                    <h3>Pesaje en Balanza</h3>
+                    <img src="img/elaboracion/elaboración_4.jpg" alt="Paso 4: Pesaje en Balanza">
+                    <p>Cada charque es revisada manualmente para asegurar la textura y ponerla en la balanza con un peso
+                        de 1/2 Kilo.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">5</div>
+                <div class="timeline-content">
+                    <h3>Sellado del Charque</h3>
+                    <img src="img/elaboracion/elaboración_5.jpg" alt="Paso 5: Empaque Premium">
+                    <p>Se sella en la maquina para que mantenga su calidad y sabor.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-number">6</div>
+                <div class="timeline-content">
+                    <h3>Charque empaquetado</h3>
+                    <img src="img/elaboracion/elaboración_7.jpg" alt="Paso 6: Empaque">
+                    <p>Empaquetado listo en presentaciones elegantes listas para ser disfrutadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="page contacto-page">
+        <h2 class="seccion-titulo">Contáctanos</h2>
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h3>Síguenos en Redes Sociales</h3>
+                <p>Mantente conectado con nosotros para conocer promociones y actualizaciones de GAPROIN</p>
+
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/profile.php?id=61583302393848&mibextid=ZbWKwL" target="_blank"
+                        class="red-social facebook">
+                        <span class="icono">f</span>
+                        <span class="texto">Facebook</span>
+                    </a>
+                    <a href="https://wa.me/+59168520443" target="_blank" class="red-social whatsapp">
+                        <span class="icono">💬</span>
+                        <span class="texto">WhatsApp</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@1234hola019?_r=1&_t=ZM-91IvSp4TWKx" target="_blank"
+                        class="red-social tiktok">
+                        <span class="icono">🎵</span>
+                        <span class="texto">TikTok</span>
+                    </a>
+                </div>
+
+                <div class="contacto-formulario">
+                    <h4>Envíanos un Mensaje</h4>
+                    <form class="formulario-contacto">
+                        <input type="text" placeholder="Tu Nombre" required>
+                        <input type="email" placeholder="Tu Email" required>
+                        <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN REGISTRO -->
+    <section id="registro" class="page registro-page">
+        <h2 class="seccion-titulo">Crear Cuenta</h2>
+        <div class="registro-container">
+            <form class="formulario-registro">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Eithan Mathias Alvarado" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="mathiaseithanalvarado@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="+591 78106043" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select id="pais" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="peru">Bolivia</option>
+                        <option value="bolivia">Chile</option>
+                        <option value="chile">Perú</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="departamento">Departamento</label>
+                    <select id="departamentos" required>
+                        <option value="">Selecciona tu Departamento</option>
+                        <option value="Oruro">Oruro</option>
+                        <option value="La Paz">La Paz</option>
+                        <option value="Cochabamba">Cochabamba</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Chuqisaca">Chuqisaca</option>
+                        <option value="Tarija">Tarija</option>
+                        <option value="Potosí">Potosí</option>
+                        <option value="Pando">Pando</option>
+                        <option value="Veni">Beni</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" placeholder="Mínimo 8 caracteres" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-contraseña">Confirmar Contraseña</label>
+                    <input type="password" id="confirmar-contraseña" placeholder="Confirma tu contraseña" required>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
+                <p class="login-link">¿Ya tienes cuenta? <a href="#login">Inicia sesión aquí</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CARRITO -->
+    <section id="carrito" class="page carrito-page">
+        <h2 class="seccion-titulo">Mi Carrito de Compras</h2>
+        <div class="carrito-container">
+            <div class="carrito-items" id="carritoItems">
+                <div class="carrito-vacio">
+                    <p>Tu carrito está vacío</p>
+                    <a href="#productos" class="btn btn-primary">Continuar Comprando</a>
+                </div>
+            </div>
+
+            <div class="carrito-resumen">
+                <h3>Resumen de Compra</h3>
+                <div class="resumen-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">Bs 0.00</span>
+                </div>
+                <div class="resumen-item">
+                    <span>Envío:</span>
+                    <span id="envio">Bs 0.00</span>
+                </div>
+                <div class="resumen-item total">
+                    <span>Total:</span>
+                    <span id="total">Bs 0.00</span>
+                </div>
+
+                <div class="metodos-pago">
+                    <h4>Métodos de Pago</h4>
+                    <div class="pago-qr">
+                        <div class="qr-code">
+                            <div class="qr-placeholder">
+                                <img src="img/logo/qr_3.jpg" alt="Código qr" width="180" height="180">
+                            </div>
+                            <p>Escanea con tu app de pago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block btn-comprar" onclick="procesarCompra()">Procesar
+                    Compra</button>
+                <a href="#productos" class="btn btn-secondary btn-block">Seguir Comprando</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>GAPROIN “Gestión Asociativo de productores e Innovadores” es una asociación de la región ganadera que
+                    se dedica a la elaboración de Charque de llama ecológico “CAMELs” “Comercialización de Alimentos de
+                    Camélidos Elaborados Localmente Sostenibles” destacando sus beneficios nutricionales y sostenibles.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#elaboracion">Elaboración</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: @charquecamels.com</p>
+                <p>Teléfono: 71103226 - 68520443</p>
+                <p>Ubicación: Cosapa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Charque CAMELs - GAPROIN.
+                Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

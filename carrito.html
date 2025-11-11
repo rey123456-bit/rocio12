@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Charque CAMELs | Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-section">
+                <img src="img/logo/logo_camels.jpg" alt="Logo Charque CAMELs" class="logo">
+                <span class="brand-name">Charque CAMELs</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="elaboracion.html" class="nav-link">Elaboración</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="registrarse.html" class="nav-link">Registrarse</a></li>
+                <li><a href="carrito.html" class="nav-link carrito-link">🛒 Carrito</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN CARRITO -->
+    <section class="page carrito-page">
+        <h2 class="seccion-titulo">Mi Carrito de Compras</h2>
+        <div class="carrito-container">
+            <div class="carrito-items" id="carritoItems">
+                <div class="carrito-vacio">
+                    <p>Tu carrito está vacío</p>
+                    <a href="productos.html" class="btn btn-primary">Continuar Comprando</a>
+                </div>
+            </div>
+
+            <div class="carrito-resumen">
+                <h3>Resumen de Compra</h3>
+                <div class="resumen-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">Bs0.00</span>
+                </div>
+                <div class="resumen-item">
+                    <span>Envío:</span>
+                    <span id="envio">Bs0.00</span>
+                </div>
+                <div class="resumen-item total">
+                    <span>Total:</span>
+                    <span id="total">Bs0.00</span>
+                </div>
+
+                <div class="metodos-pago">
+                    <h4>Métodos de Pago</h4>
+                    <div class="pago-qr">
+                        <div class="qr-code">
+                            <div class="qr-placeholder">
+                                <img src="img/logo/qr.jpg" alt="Código qr" width="170" height="170">
+                            </div>
+                            <p>Escanea con tu app de pago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block btn-comprar" onclick="procesarCompra()">Procesar
+                    Compra</button>
+                <a href="productos.html" class="btn btn-secondary btn-block">Seguir Comprando</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Charque CAMELs es una iniciativa de la asociación GAPROIN dedicada a preservar y promocionar la
+                    tradición ancestral del charque andino.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="elaboracion.html">Elaboración</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: AsociaciónGAPROIN@gmail.com</p>
+                <p>Teléfono: +591 71103226</p>
+                <p>Ubicación: Cosapa - Oruro - Bolivia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Charque CAMELs - GAPROIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

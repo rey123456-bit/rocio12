@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Charque CAMELs | Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-section">
+                <img src="client/public/logo.png" alt="Logo Charque CAMELs" class="logo">
+                <span class="brand-name">Charque CAMELs</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="elaboracion.html" class="nav-link">Elaboración</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="registrarse.html" class="nav-link">Registrarse</a></li>
+                <li><a href="carrito.html" class="nav-link carrito-link">🛒 Carrito</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN REGISTRO -->
+    <section class="page registro-page">
+        <h2 class="seccion-titulo">Crear Cuenta</h2>
+        <div class="registro-container">
+            <form class="formulario-registro">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="+1 (555) 123-4567" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select id="pais" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="peru">Perú</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="chile">Chile</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" placeholder="Mínimo 8 caracteres" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-contraseña">Confirmar Contraseña</label>
+                    <input type="password" id="confirmar-contraseña" placeholder="Confirma tu contraseña" required>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
+                <p class="login-link">¿Ya tienes cuenta? <a href="#login">Inicia sesión aquí</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Charque CAMELs es una iniciativa de la asociación GAPROIN dedicada a preservar y promocionar la tradición ancestral del charque andino.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="elaboracion.html">Elaboración</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@charquecamels.com</p>
+                <p>Teléfono: +1 (555) 123-4567</p>
+                <p>Ubicación: Región Andina</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Charque CAMELs - GAPROIN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
